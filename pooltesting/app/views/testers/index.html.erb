@@ -1,0 +1,17 @@
+<h1>Testers controller, index action</h1>
+
+<p>Edit this file in <tt>app/views/testers/index.html.erb</tt></p>
+
+<table>
+  <tr>
+  </tr>
+
+<% for tester in @testers %>
+  <tr>
+    <td><%= link_to 'Show', url(:tester, tester) %></td>
+    <td><%= link_to 'Edit', url(:edit_tester,  tester) %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New', url(:new_tester) %>

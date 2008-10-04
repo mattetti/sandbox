@@ -1,0 +1,11 @@
+<h1>Testers controller, new action</h1>
+
+<p>Edit this file in <tt>app/views/testers/new.html.erb</tt></p>
+
+<%= form_for(@tester, :action => url(:testers) ) do %>
+  <p>
+    <%= submit "Create" %>
+  </p>
+<% end =%>
+
+<%= link_to 'Back', url(:testers) %>
